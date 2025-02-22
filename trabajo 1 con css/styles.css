@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Blanco suave */
+    color: #2d2d2d;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(135deg, #2c0dcb, #c70039); /* Azul profundo a rojo intenso */
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Navegación */
+nav {
+    background: #2c0dcb; /* Azul profundo */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #c70039; /* Rojo intenso */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sección de historia */
+section {
+    padding: 3rem;
+    text-align: center;
+    background: #2c0dcb; /* Azul profundo */
+    color: white;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de técnicas */
+#tecnicas {
+    background: linear-gradient(135deg, #2c0dcb, #c70039);
+}
+
+/* Tarjetas de técnicas */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: linear-gradient(135deg, #2c0dcb, #c70039);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Galería Swiper */
+#galeria {
+    background: linear-gradient(135deg, #2c0dcb, #c70039);
+}
+
+.swiper-container {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.swiper-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Sección de videos y sonidos */
+#multimedia {
+    background: linear-gradient(135deg, #2c0dcb, #c70039);
+    padding: 3rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Testimonios */
+#testimonios {
+    background: linear-gradient(135deg, #2c0dcb, #c70039);
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 5px solid #c70039; /* Rojo intenso */
+    padding-left: 10px;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    background: #2c0dcb; /* Azul profundo */
+    color: #f4f4f4; /* Blanco suave */
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 20px;
+}

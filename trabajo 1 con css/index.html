@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Arte del Boxeo - Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+<body>
+
+    <!-- Pantalla de inicio -->
+    <div id="splash-screen">
+        <h1>Este es mi hobby</h1>
+        <button id="start-btn">Descubrir más</button>
+    </div>
+
+    <!-- Contenido de la página (oculto al inicio) -->
+    <div id="content" style="display: none;">
+
+        <header>
+            <h1>El Arte del Boxeo</h1>
+            <p>Bienvenidos a la página donde el boxeo cobra vida.</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#tecnicas">Técnicas</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#multimedia">Videos y Sonidos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section id="historia">
+            <h2>Historia del Boxeo</h2>
+            <p>El boxeo era uno de los deportes más practicados en la Antigua Grecia. Lo hacían tanto adultos como jóvenes. Desde el año 688 a. C. formó parte del catálogo olímpico. El primer campeón fue Onomastos de Esmirna.
+
+                Los boxeadores griegos seguían una dieta bastante estricta y la práctica del deporte era vigilada por verdaderos maestros. Los deportistas solían practicar sus golpes con sacos de tela o piel rellenos de arena.
+                
+                Incluso se obsesionaban tanto con la resistencia física, que golpeaban con la cabeza el saco para intentar endurecerla (Sayago Guzmán, 2019).
+                
+                En el siglo V los boxeadores recubrían sus manos con tiras de piel de buey. Combatían desnudos y la pelea se terminaba si uno de los dos quedaba fuera de combate o se rendía..</p>
+        </section>
+
+        <section id="tecnicas" class="colored-section">
+            <h2>Técnicas Básicas</h2>
+            <div class="cards">
+                <div class="card"><h3>Jab</h3><p>Golpe rápido y directo con la mano adelantada.</p></div>
+                <div class="card"><h3>Cross</h3><p>Golpe recto con la mano trasera.</p></div>
+                <div class="card"><h3>Hook</h3><p>Golpe en forma de gancho dirigido a los costados.</p></div>
+                <div class="card"><h3>Uppercut</h3><p>Golpe ascendente dirigido al mentón del oponente.</p></div>
+            </div>
+        </section>
+
+        <section id="galeria" class="colored-section">
+            <h2>Galería</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="boxeo1.jpg" alt="Boxeador"></div>
+                    <div class="swiper-slide"><img src="boxeo2.jpg" alt="Combate"></div>
+                    <div class="swiper-slide"><img src="entrenamiento.webp" alt="Entrenamiento"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section id="multimedia" class="colored-section">
+            <h2>Videos y Sonidos</h2>
+            <video controls width="300">
+                <source src="combate2.mp4" type="video/mp4">
+            </video>
+            <audio controls>
+                <source src="campana de Box _ Efecto de sonido.mp4" type="audio/mp3">
+            </audio>
+        </section>
+
+        <section id="testimonios" class="colored-section">
+            <h2>Testimonios</h2>
+            <blockquote>"El boxeo ha cambiado mi vida, me ha dado disciplina y fortaleza" - Juan Pérez</blockquote>
+            <blockquote>"Desde que entreno boxeo, me siento más seguro y saludable" - María López</blockquote>
+        </section>
+
+        <footer id="contacto">
+            <h3>Contacto</h3>
+            <p>Tito David Anacota.</p>
+            <p>Escuela de Artes Marciales Mixtas</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript para la pantalla de inicio y Swiper -->
+    <script>
+        // Ocultar pantalla de inicio y mostrar contenido
+        document.getElementById("start-btn").addEventListener("click", function() {
+            document.getElementById("splash-screen").style.display = "none";
+            document.getElementById("content").style.display = "block";
+        });
+
+        // Configuración de Swiper
+        var swiper = new Swiper('.swiper-container', {
+            pagination: { el: '.swiper-pagination', clickable: true },
+            autoplay: { delay: 3000, disableOnInteraction: false }
+        });
+    </script>
+
+    <!-- Estilos CSS para la pantalla de inicio -->
+    <style>
+        /* Pantalla de inicio */
+        #splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #2c0dcb, #c70039);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #splash-screen h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #start-btn {
+            background: #ffcc29;
+            color: #2d2d2d;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        #start-btn:hover {
+            background: #ffdb4d;
+        }
+    </style>
+
+</body>
+</html>
+
+
