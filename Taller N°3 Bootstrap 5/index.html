@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Arte del Boxeo - Profesional</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">🥊 Boxeo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tecnicas">Técnicas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#multimedia">Videos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#usuarios">Usuarios</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Secciones -->
+    <section id="historia" class="container">
+        <h2>Historia del Boxeo</h2>
+        <p>El boxeo es un deporte de combate con una rica historia que se remonta a la antigüedad...</p>
+    </section>
+
+    <section id="sobre-mi" class="container">
+        <h2>Sobre Mí</h2>
+        <p>Comencé en el mundo del boxeo por curiosidad y terminó convirtiéndose en mi pasión...</p>
+    </section>
+
+    <section id="tecnicas" class="container">
+        <h2>Técnicas de Boxeo</h2>
+        <ul>
+            <li><strong>Jab:</strong> Golpe recto y rápido con la mano adelantada...</li>
+            <li><strong>Cross:</strong> Golpe fuerte con la mano trasera...</li>
+            <li><strong>Hook:</strong> Golpe en ángulo dirigido a los costados...</li>
+            <li><strong>Uppercut:</strong> Golpe ascendente dirigido al mentón...</li>
+        </ul>
+    </section>
+
+    <section id="galeria" class="container">
+        <h2>Galería</h2>
+        <div id="carouselBoxeo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img src="boxeo1.jpg" class="d-block w-100" alt="Boxeador"></div>
+                <div class="carousel-item"><img src="boxeo2.jpg" class="d-block w-100" alt="Combate"></div>
+                <div class="carousel-item"><img src="entrenamiento.webp" class="d-block w-100" alt="Entrenamiento"></div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBoxeo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselBoxeo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección de Multimedia -->
+    <section id="multimedia" class="container">
+        <h2>Videos y Sonidos</h2>
+        <video controls class="video-boxeo">
+            <source src="combate2.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <audio controls class="audio-boxeo">
+            <source src="campana_de_box.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </section>
+
+    <section id="usuarios" class="container">
+        <h2>Usuarios Registrados</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre Completo</th>
+                    <th>Rol</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Juan Pérez</td>
+                    <td>Entrenador</td>
+                    <td>
+                        <button class="btn btn-info btn-sm">Ver</button>
+                        <button class="btn btn-warning btn-sm">Editar</button>
+                        <button class="btn btn-danger btn-sm">Eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>María López</td>
+                    <td>Peleadora</td>
+                    <td>
+                        <button class="btn btn-info btn-sm">Ver</button>
+                        <button class="btn btn-warning btn-sm">Editar</button>
+                        <button class="btn btn-danger btn-sm">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
